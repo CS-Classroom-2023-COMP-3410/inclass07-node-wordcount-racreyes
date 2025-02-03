@@ -55,8 +55,9 @@ Bye World!`;
         
         printColoredLines(content, wordCounts);
 
-        expect(consoleOutput[0]).toBe(chalk.green('Hello') + ' ' + chalk.green('World') + ' ');
-        expect(consoleOutput[1]).toBe(chalk.green('Hello') + ' ' + chalk.green('World') + ' ');
-        expect(consoleOutput[2]).toBe(chalk.blue('Bye') + ' ' + chalk.green('World') + ' ');
+        expect(consoleOutput[0]).toBe(chalk.green('Hello') + ' ' + chalk.green('World'));
+        expect(consoleOutput[1]).toBe(chalk.green('Hello') + ' ' + chalk.green('World'));
+        expect(consoleOutput[2]).toBe(chalk.blue('Bye') + ' ' + chalk.green('World'));
+
     });
 });
